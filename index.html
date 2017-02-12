@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body onload="homePage();">
+
+    <header>
+        <div id="quiz">
+            <hr style="margin-top: 20px;">
+            <p id="question"></p>
+            <div id="mainContent">
+                <p>let you ready to go Quiz</p>
+                <input type="button" value="Start Quiz" onclick="startQuiz();" style="background:#4cff00; width: 140px; height: 50px; border-radius: 17px; text-align: center; margin-left: 40%;">
+            </div>
+            <div id="quizSection">
+                <input type="radio" id="radio0"><span id="opt0"></span><br>
+                <input type="radio" id="radio1"><span id="opt1"></span><br>
+                <input type="radio" id="radio2"><span id="opt2"></span><br>
+                <input type="radio" id="radio3"><span id="opt3"></span><br>
+                <input type="button" value="Submit" onclick="nextQuestion();" style="background:#4cff00; width: 140px; height: 50px; border-radius: 17px; text-align: center; margin-left: 40%;">
+            </div>
+        </div>
+    </header>
+    <div id="scoreDiv">
+      <h1>Your Score is:<span id="score"></span></h1>
+        <input type="button" value="Home" onclick="reTest();" style="background:#4cff00; width: 140px; height: 50px; border-radius: 17px; text-align: center; margin-top: 170px;">
+    </div>
+</body>
+
+</html>
